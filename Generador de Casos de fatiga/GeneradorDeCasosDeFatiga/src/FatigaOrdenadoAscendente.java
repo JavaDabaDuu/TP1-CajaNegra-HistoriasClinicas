@@ -1,0 +1,28 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
+public class FatigaOrdenadoAscendente {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		int i;
+		int j = 4000;
+		File archivo = new File ("../h_clinicasDescendente.in");
+		PrintWriter salida = new PrintWriter (archivo);
+		char letra = 'a';
+		
+		for(i = 0; i<4000 ; i++) {
+			salida.print(j);
+			j--;
+			salida.print(" " + letra + " " + letra);
+			salida.println();
+			letra++;
+			if(letra > 'z') {
+				letra = 'a';
+			}
+		}
+		
+		salida.close();
+	}
+
+}
