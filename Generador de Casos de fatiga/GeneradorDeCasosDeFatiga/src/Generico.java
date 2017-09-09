@@ -12,8 +12,8 @@ public class Generico {
 		Random rand = new Random();
 		char letra = 'a';
 		
-		for(i = 0; i<4000; i++) {
-			salida.print(rand.nextInt(4000));
+		for(i = 0; i<50; i++) {
+			salida.print(rand.nextInt(50));
 			salida.print(" " + letra + " " + letra);
 			salida.println();
 			letra++;

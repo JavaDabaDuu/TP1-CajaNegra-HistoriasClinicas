@@ -6,12 +6,13 @@ public class FatigaOrdenadoAscendente {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		int i;
-		int j = 4000;
-		File archivo = new File ("../h_clinicasDescendente.in");
+		int j = 40000;
+		File archivo = new File ("C:/Users/laboratorios/Desktop/TP1 - CAJA NEGRA/Ejecutables/h_clinicas.in");
 		PrintWriter salida = new PrintWriter (archivo);
 		char letra = 'a';
-		
-		for(i = 0; i<4000 ; i++) {
+		salida.print(j);
+		salida.println();
+		for(i = 0; i<40000 ; i++) {
 			salida.print(j);
 			j--;
 			salida.print(" " + letra + " " + letra);
